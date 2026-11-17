@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Operating Systems exam answer instructions and prompt.">
+  <title>Operating Systems (OS) Exam Answers</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 32px 16px;
+      background: #f3f5f8; color: #202938;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 850px; margin: 0 auto; background: #fff;
+      border: 1px solid #e3e7ed; border-radius: 16px;
+      padding: clamp(22px, 5vw, 44px);
+      box-shadow: 0 8px 28px rgba(20, 35, 55, .06);
+    }
+    h1 { margin: 0 0 10px; font-size: clamp(25px, 4vw, 34px); line-height: 1.2; }
+    .sub { color: #657184; margin: 0 0 24px; }
+    pre {
+      margin: 0; white-space: pre-wrap; overflow-wrap: anywhere;
+      font: 15px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button {
+      display: inline-block; margin: 0 0 22px; padding: 11px 17px;
+      border: 0; border-radius: 9px; background: #2457c5; color: white;
+      font-size: 15px; font-weight: 600; cursor: pointer;
+    }
+    button:hover { background: #1947a8; }
+    @media (max-width: 520px) { body { padding: 12px; } main { border-radius: 12px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Operating Systems (OS) Exam Answers</h1>
+    <p class="sub">Your exam-answer instructions and reusable prompt</p>
+    <button type="button" id="copyButton">Copy entire prompt</button>
+    <pre id="prompt">OPERATING SYSTEMS (OS) EXAM ANSWERS
+
+I am preparing for my Operating Systems (OS) examination. I will ask you two types of questions:
+1. Theory-Based Questions
+2. Code-Based Questions
+
+Your job is to provide the best possible exam-ready answers that I can directly write in my examination.
+
+GENERAL INSTRUCTIONS
+• Give accurate, technically correct answers.
+• Use simple, clear, student-friendly language.
+• Keep answers moderately detailed: neither unnecessarily lengthy.
+• Focus on important points that help maximize examination marks.
+• Use proper headings, subheadings, bullet points, and examples wherever appropriate.
+• Avoid unnecessary introductions, repetitive explanations, and irrelevant information.
+• Make answers easy to understand, remember, and reproduce in an examination.
+• Highlight important technical terms and keywords.
+• Do not skip essential concepts.
+
+1. FOR THEORY-BASED QUESTIONS
+Follow these guidelines:
+1. Start with a clear and precise definition.
+2. Explain the concept in simple, exam-friendly language.
+3. Include important features, characteristics, steps, or classifications wherever relevant.
+4. Use numbered points or bullet points for better presentation.
+5. Include a suitable example wherever it helps understanding.
+6. Include a comparison table if the question requires one or if it significantly improves the answer.
+7. End with a short conclusion wherever appropriate.
+
+Important: Match the depth of the answer to the marks and scope of the question. Do not over-explain simple questions or under-explain important ones.
+
+2. FOR CODE-BASED QUESTIONS
+Follow this EXACT seven-part structure for every programming question:
+1. Algorithm: Write numbered steps in simple, exam-friendly language.
+2. Python Program: Provide complete, correct, executable code suitable for a practical examination. Include necessary comments and proper indentation.
+3. Sample Input: Show the exact values to enter, one by one, in the correct order.
+4. Sample Output: Show the expected output corresponding exactly to the sample input.
+5. Flowchart: Provide a clear, step-by-step flowchart structure with correct decision branches and loops wherever required.
+6. Viva Questions: Provide 4–5 likely viva questions with short, direct answers related to the program.
+7. Explanation: Briefly explain the important program logic, functions, conditions, and working so I can confidently defend the program during my viva.
+
+Additional Coding Rules
+• The program must be complete and executable without missing sections.
+• Keep the code simple and suitable for a practical examination.
+• Do not use unnecessarily complicated logic or advanced techniques.
+• Ensure the algorithm, code, sample input, sample output, and flowchart are consistent with one another.
+• Do not provide imaginary or incorrect outputs.
+• Use Python as the default programming language unless the question explicitly specifies another language.
+• For Operating Systems programs involving processes, CPU scheduling, synchronization, deadlocks, memory management, or disk scheduling, ensure the implementation follows the correct OS concepts.
+
+FINAL INSTRUCTION
+First, identify whether my question is theory-based or code-based.
+• If it is a theory question, follow Section 1.
+• If it is a code-based question, strictly follow all seven parts in Section 2, without skipping or rearranging any part.
+Give me the final answer directly in an examination-ready format. Do not include unnecessary conversational explanations or tell me how you arrived at the answer.
+
+My goal is to understand the answer, reproduce it accurately in my examination, and confidently answer related viva questions.</pre>
+  </main>
+  <script>
+    const copyButton = document.getElementById('copyButton');
+    copyButton.addEventListener('click', async () => {
+      const text = document.getElementById('prompt').innerText;
+      try {
+        await navigator.clipboard.writeText(text);
+        copyButton.textContent = 'Copied!';
+      } catch (error) {
+        copyButton.textContent = 'Select the text below and copy it';
+      }
+    });
+  </script>
+</body>
+</html>
